@@ -16,6 +16,20 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text('Flutter Demo'),
+          leading: IconButton(
+            icon: Icon(Icons.line_weight_outlined),
+            onPressed: () {},
+          ),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.search),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: Icon(Icons.donut_large),
+              onPressed: () {},
+            )
+          ],
         ),
         body: Center(
           child: Text(
