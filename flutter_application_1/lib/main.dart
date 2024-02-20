@@ -18,7 +18,14 @@ class MyApp extends StatelessWidget {
           title: Text('Flutter Demo'),
         ),
         body: Center(
-          child: Text('Hello, world!'),
+          child: Text(
+            'Hello, world!',
+            style: TextStyle(
+              color: Colors.amber,
+              fontSize: 35,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ),
       ),
     );
