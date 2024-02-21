@@ -1,46 +1,29 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const TabBarDemo());
+  runApp(FlutterTutorialApp());
 }
 
-class TabBarDemo extends StatelessWidget {
-  const TabBarDemo({Key? key});
-
+class FlutterTutorialApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: DefaultTabController(
-        length: 3,
-        child: Scaffold(
-          appBar: AppBar(
-            backgroundColor:
-                Colors.amberAccent[400], // Set the background color
-            bottom: const TabBar(
-              tabs: [
-                Tab(
-                  icon: Icon(Icons.directions_car),
-                  text: 'tab1',
-                ),
-                Tab(icon: Icon(Icons.directions_transit)),
-                Tab(icon: Icon(Icons.directions_bike)),
-              ],
-            ),
-            elevation: 2, // Set the elevation
-            title: const Text(
-              'Tabs Demo 123',
-              style: TextStyle(
-                color: Colors.white, // Set the text color
-              ),
-            ),
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.black,
+          title: Text(
+            'Flutter Tutorial',
+            style: TextStyle(color: Colors.white),
           ),
-          body: const TabBarView(
-            children: [
-              Icon(Icons.directions_car),
-              Icon(Icons.directions_transit),
-              Icon(Icons.directions_bike),
-            ],
+        ),
+        body: Container(
+          color: Colors.grey[300],
+          child: Center(
+            child: Text(
+              'Welcome to Flutter Tutorial!',
+              style: TextStyle(fontSize: 24),
+            ),
           ),
         ),
       ),
