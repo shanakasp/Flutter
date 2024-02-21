@@ -21,7 +21,7 @@ class FlutterTutorialApp extends StatelessWidget {
           color: Colors.grey[300],
           child: Center(
             child: Text(
-              'Welcome to Flutter Tutorial!',
+              'Welcome to Flutter Tutorial',
               style: TextStyle(fontSize: 24),
             ),
           ),
