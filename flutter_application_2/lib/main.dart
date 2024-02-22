@@ -18,7 +18,7 @@ class FlutterTutorialApp extends StatelessWidget {
           ),
         ),
         body: Container(
-          color: Colors.grey[300],
+          color: Colors.pink[400],
           child: Center(
             child: Text(
               'Welcome to Flutter Tutorial',
